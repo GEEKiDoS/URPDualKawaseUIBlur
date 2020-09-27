@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e2e32e102e44abeb72209e7ce030c3, type: 3}
   m_Name: NewKawaseBlur
   m_EditorClassIdentifier: 
+  m_Active: 1
   settings:
     renderPassEvent: 1000
     blurMaterial: {fileID: 2100000, guid: a00afda211f274f6ca6cce958e4e13a5, type: 2}
@@ -33,6 +34,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RendererFeatures:
   - {fileID: -6198396586457204615}
+  m_RendererFeatureMap: 7978392725dffaa9
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   shaders:
     blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
@@ -54,6 +56,7 @@ MonoBehaviour:
     passOperation: 0
     failOperation: 0
     zFailOperation: 0
+  m_ShadowTransparentReceive: 1
 --- !u!114 &6823134868636172123
 MonoBehaviour:
   m_ObjectHideFlags: 0
