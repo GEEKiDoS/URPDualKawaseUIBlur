@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: blur
-  m_Shader: {fileID: 4800000, guid: 926e401a0e7844c458d7718d5b298a2c, type: 3}
+  m_Name: Blur
+  m_Shader: {fileID: 4800000, guid: 767e1f7ba5cdd1e48a46b0ed51cd2962, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -61,6 +61,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueOffset: 0
+    - _Radius: 4
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0

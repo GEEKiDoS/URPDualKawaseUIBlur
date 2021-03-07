@@ -78,7 +78,7 @@ Shader "UI/BlurredBackground"
 			};
 
 			sampler2D _MainTex;
-			sampler2D _blurTexture;
+			sampler2D _BlurTexture;
 			fixed4 _Color;
 			fixed4 _TextureSampleAdd;
 			float4 _ClipRect;
@@ -104,7 +104,7 @@ Shader "UI/BlurredBackground"
 				half4 color = (tex2D(_MainTex, IN.texcoord) + _TextureSampleAdd) * IN.color;
 
 				float2 screenUV = IN.screenPos.xy / IN.screenPos.w;
-				color.rgb *= tex2D(_blurTexture, screenUV).rgb;
+				color.rgb *= tex2D(_BlurTexture, screenUV).rgb;
 
 				#ifdef UNITY_UI_CLIP_RECT
 				color.a *= UnityGet2DClipping(IN.worldPosition.xy, _ClipRect);
